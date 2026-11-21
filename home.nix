@@ -7,20 +7,12 @@
   imports = [
     ./user/flatpak.nix
     ./user/noctalia.nix
-    ./user/persistence.nix
-    # ./user/plasma.nix
-
   ];
 
   my.user.git = {
     name = "Victor";
     email = "victor@mail.net";
   };
-
-  # programs.alacritty = {
-  #   enable = true;
-  #   theme = "solarized_dark";
-  # };
 
   my.programs = {
     brave.enable = true;
