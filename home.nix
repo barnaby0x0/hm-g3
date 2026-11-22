@@ -6,7 +6,7 @@
 
   imports = [
     ./user/flatpak.nix
-    ./user/noctalia.nix
+    # ./user/noctalia.nix
   ];
 
   my.user.git = {
