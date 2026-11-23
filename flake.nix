@@ -14,9 +14,8 @@
       modules = [
         nix-config.homeModules.profiles.base
         nix-config.homeModules.nix-flatpak
-        # nix-config.homeModules.profiles.niri
-        nix-config.homeModules.plasma
-
+        nix-config.homeModules.profiles.niri
+        # nix-config.homeModules.plasma
         ./home.nix
       ];
     };
