@@ -170,8 +170,9 @@
         video_directory = "/home/user/Videos/wallpapers";
         mute = true;
         hardware_decode = true;
-        glyph = "movie";
-        mpv_options = "hwdec=vaapi";
+        # glyph = "movie";
+        # mpv_options = "hwdec=vaapi";
+        mpv_options = "hwdec=auto-safe";
       };
 
       plugin_settings."naijnus/flatpak-bg" = {
