@@ -54,7 +54,7 @@
           "battery"
           # "control-center"
           "wallhaven"
-          #"noctalia/mpvpaper:mpvpaper"
+          "noctalia/mpvpaper:mpvpaper"
           "flatpak-bg"
           "session"
         ];
@@ -131,7 +131,7 @@
           "noctalia/screen_recorder"
           "noctalia/wallhaven"
           # "noctalia/notes"
-          #"noctalia/mpvpaper"
+          "noctalia/mpvpaper"
           "naijnus/flatpak-bg"
           "styrish/modernclock"
           "avivbintangaringga/nix-monitor"
@@ -166,14 +166,13 @@
         download_dir = "/home/user/.wallpapers/wallhaven";
       };
 
-      #plugin_settings."noctalia/mpvpaper" = {
-      #  video_directory = "/home/user/Videos/wallpapers";
-      #  mute = true;
-      #  hardware_decode = true;
-      #  # glyph = "movie";
-      #  # mpv_options = "hwdec=vaapi";
-      #  mpv_options = "hwdec=auto-safe";
-      #};
+      plugin_settings."noctalia/mpvpaper" = {
+        video_directory = "/home/user/Videos/wallpapers";
+        mute = true;
+        hardware_decode = true;
+        glyph = "movie";
+        mpv_options = "hwdec=vaapi";
+      };
 
       plugin_settings."naijnus/flatpak-bg" = {
         interval = 5;
